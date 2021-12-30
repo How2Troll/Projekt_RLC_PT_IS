@@ -132,6 +132,9 @@ t_domain=(0:0.001:0.25);
 figure('Name','Napięcie wejściowe i prąd cewki L/kondenatora C', 'NumberTitle','off')
     subplot(2,3,1)
     plot(t_domain,u(t_domain))
+    ylabel("OS");
+    xlabel("OS");
+    title("TITLE");
     subplot(2,3,2)
     plot(f,A_uf)
     subplot(2,3,3)
