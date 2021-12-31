@@ -2,6 +2,7 @@ clear, close all, clc;
 syms t;
 %Analiza czasowo-częstotliwościowa układu RLC
 % Autorzy: Paweł Tymoczko, Igor Siemek
+
 %wartości elementów układu i napięcie wyjściowe
 %GITHUB
 %https://github.com/How2Troll/Projekt_RLC_PT_IS
@@ -135,20 +136,39 @@ figure('Name','Napięcie wejściowe i prąd cewki L/kondenatora C', 'NumberTitle
     subplot(2,3,1)
     plot(t_domain,u(t_domain))
     axis([0 0.25 -3 22]); %mozna komentowac
-    ylabel("OS"); %mozna komentowac
-    xlabel("OS"); %mozna komentowac
-    title("TITLE"); %mozna komentowac
-    %WYKRES EDYTOWANY 30.12
+    ylabel("napiecie [V]"); %mozna komentowac
+    xlabel("czas [s]"); %mozna komentowac
+    title("Napiecie wejsciowe"); %mozna komentowac
+    %WYKRES EDYTOWANY 30.12 ---------
     subplot(2,3,2)
     plot(f,A_uf)
+    ylabel("amplituda");
+    xlabel("czestotliwosc [f]");
+    title("Widmo aplitudowe sygnału ??wejsciowego??") %%done IS
+
     subplot(2,3,3)
     plot(f,fi_uf)
+    ylabel("faza");
+    xlabel("czestotliwosc [f]");
+    title("Widmo fazowe sygnału ??wejsciowego??") %% done iS
+    
     subplot(2,3,4)
     plot(t_domain,i(t_domain))
+    ylabel("prąd [A]");
+    xlabel("czas [s]");
+    title("Prad ??wejsciowy/R1??")  % DONE IS
+    
     subplot(2,3,5)
     plot(f,A_if)
+    ylabel("amplituda");
+    xlabel("czestotliwosc [f]");
+    title("Widmo aplitudowe sygnału ??prądu?? ??wejsciowego??") % done is
+    
     subplot(2,3,6)
     plot(f,fi_if)
+    ylabel("faza");
+    xlabel("czestotliwosc [f]");
+    title("Widmo fazowe sygnału ??prądu?? ??wejsciowego??") % done is
    
 figure('Name','Napięcie i prąd cewki L', 'NumberTitle','off')
     subplot(2,3,1)
