@@ -135,81 +135,151 @@ t_domain=(0:0.001:0.25);
 figure('Name','Napięcie wejściowe i prąd cewki L/kondenatora C', 'NumberTitle','off')
     subplot(2,3,1)
     plot(t_domain,u(t_domain))
-    axis([0 0.25 -3 22]); %mozna komentowac
-    ylabel("napiecie [V]"); %mozna komentowac
-    xlabel("czas [s]"); %mozna komentowac
-    title("Napiecie wejsciowe"); %mozna komentowac
-    %WYKRES EDYTOWANY 30.12 ---------
+    ylabel("napiecie [V]");
+    xlabel("czas [s]");
+    title("Napięcie wejściowe");
+    
     subplot(2,3,2)
     plot(f,A_uf)
     ylabel("amplituda");
     xlabel("czestotliwosc [f]");
-    title("Widmo aplitudowe sygnału ??wejsciowego??") %%done IS
+    title("Widmo amplitudowe napięcia wejściowego");
 
     subplot(2,3,3)
     plot(f,fi_uf)
     ylabel("faza");
     xlabel("czestotliwosc [f]");
-    title("Widmo fazowe sygnału ??wejsciowego??") %% done iS
+    title("Widmo fazowe napięcia wejsciowego");
     
     subplot(2,3,4)
     plot(t_domain,i(t_domain))
     ylabel("prąd [A]");
     xlabel("czas [s]");
-    title("Prad ??wejsciowy/R1??")  % DONE IS
+    title("Prąd wejściowy");
     
     subplot(2,3,5)
     plot(f,A_if)
     ylabel("amplituda");
     xlabel("czestotliwosc [f]");
-    title("Widmo aplitudowe sygnału ??prądu?? ??wejsciowego??") % done is
+    title("Widmo amplitudowe prądu wejściowego");
     
     subplot(2,3,6)
     plot(f,fi_if)
-    ylabel("faza");
+    ylabel("faza [rad]");
     xlabel("czestotliwosc [f]");
-    title("Widmo fazowe sygnału ??prądu?? ??wejsciowego??") % done is
+    title("Widmo fazowe prądu wejściowego");
    
 figure('Name','Napięcie i prąd cewki L', 'NumberTitle','off')
     subplot(2,3,1)
     plot(t_domain,uL(t_domain))
+    ylabel("napiecie [V]");
+    xlabel("czas [s]");
+    title("Napięcie na cewce");
+    
     subplot(2,3,2)
     plot(f,A_uLf)
+    ylabel("amplituda");
+    xlabel("czestotliwosc [f]");
+    title("Widmo amplitudowe napięcia na cewce");
+    
     subplot(2,3,3)
     plot(f,fi_uLf)
+    ylabel("faza [rad]");
+    xlabel("czestotliwosc [f]");
+    title("Widmo fazowe napięcia na cewce");  
+    
     subplot(2,3,4)
     plot(t_domain,iL(t_domain))
+    ylabel("prąd [A]");
+    xlabel("czas [s]");
+    title("Prąd na cewce");
+    
     subplot(2,3,5)
     plot(f,A_iLf)
+    ylabel("amplituda");
+    xlabel("czestotliwosc [f]");
+    title("Widmo amplitudowe prądu na cewce");
+    
     subplot(2,3,6)
     plot(f,fi_iLf)
+    ylabel("faza [rad]");
+    xlabel("czestotliwosc [f]");
+    title("Widmo fazowe prądu na cewce");
+    
 figure('Name','Napięcie i prąd rezystora R2', 'NumberTitle','off')
     subplot(2,3,1)
     plot(t_domain,uR2(t_domain))
+    ylabel("napiecie [V]");
+    xlabel("czas [s]");
+    title("Napiecie na R2");
+    
     subplot(2,3,2)
     plot(f,A_uR2f)
+    ylabel("amplituda");
+    xlabel("czestotliwosc [f]");
+    title("Widmo amplitudowe napięcia na R2");
+    
     subplot(2,3,3)
     plot(f,fi_uR2f)
+    ylabel("faza [rad]");
+    xlabel("czestotliwosc [f]");
+    title("Widmo fazowe napięcia na R2");
+    
     subplot(2,3,4)
     plot(t_domain,iR2(t_domain))
+    ylabel("prąd [A]");
+    xlabel("czas [s]");
+    title("Prąd na R2"); 
+    
     subplot(2,3,5)
     plot(f,A_iR2f)
+    ylabel("amplituda");
+    xlabel("czestotliwosc [f]");
+    title("Widmo amplitudowe prądu na R2");
+    
     subplot(2,3,6)
     plot(f,fi_iR2f)
+    ylabel("faza [rad]");
+    xlabel("czestotliwosc [f]");
+    title("Widmo fazowe prądu na R2");
     
 figure('Name','Napięcie kondensatora C i rezystora R1', 'NumberTitle','off')
     subplot(2,3,1)
     plot(t_domain,uC(t_domain))
+    ylabel("napiecie [V]");
+    xlabel("czas [s]");
+    title("Napięcie na C");
+    
     subplot(2,3,2)
     plot(f,A_uCf)
+    ylabel("amplituda");
+    xlabel("czestotliwosc [f]");
+    title("Widmo amplitudowe napięcia na C");
+    
     subplot(2,3,3)
     plot(f,fi_uCf)
+    ylabel("faza [rad]");
+    xlabel("czestotliwosc [f]");
+    title("Widmo fazowe napięcia na C");
+    
     subplot(2,3,4)
     plot(t_domain,uR1(t_domain))
+    ylabel("napiecie [V]");
+    xlabel("czas [s]");
+    title("Napiecie na R1");
+    
     subplot(2,3,5)
     plot(f,A_uR1f)
+    ylabel("amplituda");
+    xlabel("czestotliwosc [f]");
+    title("Widmo prądu napięcia na R1");
+    
     subplot(2,3,6)
     plot(f,fi_uR1f)
+    ylabel("faza [rad]");
+    xlabel("czestotliwosc [f]");
+    title("Widmo fazowe napięcia na R1");
+    
 
 
 
